@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px; /* Set height to 60px */
+  background-color: #f5f5f5; 
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 15px; 
+}
+/* Logo area */
+.logo {
+  margin-left: 20px;
+  margin-right: 40px; /* Space between logo and the navigation */
+  margin-top: 5px;
+  border-radius: 50%;
+  object-fit: contain;
+  /* mix-blend-mode: color-burn; */
+  
+}
+
+.img-nav{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-top: 20px;
+  mix-blend-mode: darken;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  gap: 30px;    /*  Adjust the gap to equally space links*/
+  flex-grow: 1; /* Allows the links to take up all available space */
+}
+
+/* Style for individual links */
+.nav-links a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 60px; /* Align with the navbar height */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  color: #FFBD59;
+  /* padding: 0 5px; Slight padding for hover effect */
+}
+
+/*  */
+.form{
+  margin-top: 70px;
+  margin-left: 450px;
+  
+  border: 3px solid black;
+  height: 600px;
+  width: 500px;
+  /* background-color: #f5f5f5; */
+  border-radius: 20px;
+}
+
+.form-mail{
+  
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.mail{
+  margin-top: 20px;
+  margin-left: 45px;
+}
+.text area{
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+}
+.form-text{
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+  
+}
+ .text-area {
+  
+  margin-left: 45px;
+
+} 
+.purpose{
+  margin-left: 55px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.form-type{
+  margin-left: 45px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.btn{
+margin-left: 155px;
+height: 55px;
+width: 100px;
+border-radius: 12px;
+}
+
+.fomt-item{
+  font-size: 300px;
+}
+/*  */
+.footer {
+  background-color: #4c5270;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.footer-section form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section input[type="email"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.footer-section button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background-color: #ddd;
+}
+.p-tag{
+  color: #f5f5f5;
+}

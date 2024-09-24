@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+      width: 100%;
+      height: 75px;
+      /* Set height to 60px */
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      padding: 0 50px 0 15px;
+    }
+
+    /* Logo area */
+    .logo {
+      color: #333333;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-right: 40px;
+      /* Space between logo and the navigation */
+      margin-top: 5px;
+      border-radius: 50%;
+    }
+
+    .img-nav {
+      border-radius: 50%;
+    }
+
+    /* Navigation links container */
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      /*  Adjust the gap to equally space links*/
+      flex-grow: 1;
+      /* Allows the links to take up all available space */
+    }
+
+    /* Style for individual links */
+    .nav-links a {
+      color: #333333;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 60px;
+      /* Align with the navbar height */
+    }
+
+    /* Hover effect for links */
+    .nav-links a:hover {
+      color: #FFBD59;
+      /* padding: 0 5px; Slight padding for hover effect */
+    }
+
+      .proj-detail {
+        margin-left: 345px;
+        height: 400px;
+        width: 900px;
+
+      }
+
+      .pra-detail {
+        font-weight: lighter;
+      }
+
+      .source-code {
+        margin-left: 36.5%;
+      }
+
+      .source-btn {
+        height: 60px;
+        width: 140px;
+        border-radius: 15px;
+        background-color: black;
+
+      }
+
+      #culor {
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      .footer {
+      background-color: #4c5270;
+      height: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      text-align: center;
+    }
+
+    .footer-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      color: #ffffff;
+      margin: 5px 0;
+    }
+
+    .footer-section form {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-section input[type="email"] {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .footer-section button {
+      padding: 5px 10px;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .footer-section button:hover {
+      background-color: #ddd;
+    }
+
+    .p-tag {
+      color: #f5f5f5;
+    }
+    </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <!-- Logo Area -->
+    <div class="logo">
+      <img class="img-nav" src="pictures/Add a heading.svg" height="70px" width="80px">
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="main.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="About.html">About</a>
+    </div>
+  </div>
+  <!--  -->
+
+
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">We Offer</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">programing Articles </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Interview Question</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">programing Courses</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  -->
+
+
+  <div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Features of Our Courses</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Comprehensive Courses:</h3>
+          <p> Offer in-depth, structured courses on a wide range of topics, ensuring learners grasp key concepts
+            effectively.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#cpu-fill"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Topic-Specific Practice Questions:</h3>
+          <p> Provide topic-specific questions to help users focus on and master individual subjects in a step-by-step
+            manner.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#calendar3"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Interview Preparation:</h3>
+          <p> A dedicated section with curated interview questions designed to help users prepare for real-world job
+            interviews in various industries.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#home"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Expert Insights and Tips:</h3>
+          <p> Provide professional advice, best practices, and insider tips for interview success, helping learners feel
+            more confident.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#speedometer2"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Customizable Learning Paths: </h3>
+          <p>Allow learners to create personalized learning paths based on their specific goals, skills, or areas they
+            want to improve.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#toggles2"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Interactive Quizzes: </h3>
+          <p>Include quizzes at the end of each module or topic to assess understanding and reinforce learning.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#geo-fill"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Real-Time Feedback: </h3>
+          <p>Offer instant feedback on answers to questions and quizzes to help learners understand mistakes and
+            improve.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+          <use xlink:href="#tools"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Progress Tracking: </h3>
+          <p>Progress Tracking: Enable users to track their learning progress, completion of courses, and improvement in
+            answering questions over time.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+
+  <!-- <div class="col-lg-8 mx-auto p-4 py-md-5"></div>
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+
+  </header> -->
+
+  <main>
+
+    <div class="proj-detail">
+      <h1 class="proj-view">Overview Of Project</h1>
+      <br>
+      <h5 class="pra-detail"> we create this project to facilitate the students with the advance courses . it covers
+        the interview qoustions of each language according to topic from basic to advance . we also provide the
+        information
+        aboiut the new topic and tool in our blog section .this will help the student to crack interview and gain
+        knowledge
+        and learning new skills .</h5>
+      <br>
+      <div class="source-code">
+        <button class="source-btn">
+          <a href="https://google.com" id="culor">Source Code</a>
+        </button>
+      </div>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Salar Ahmad</h2>
+          <p>I am a front-end develper. this website is in bootstrap and javascript .currently learning and making
+            projects on react</p>
+          <ul class="list-unstyled ps-0">
+            <li>
+              <a class="icon-link mb-1" href="https://linkedin.com/in/salar-ahmad-8a7489264" rel="noopener"
+                target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle"></use>
+                </svg>
+                linkdin
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://gmain.com/code.salar@gmail.com" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle"></use>
+                </svg>
+                Gmail
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="https://wa.me/qr/EP63VAFMCM4DL1" rel="noopener" target="_blank">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle"></use>
+                </svg>
+                WattsaApp
+              </a>
+            </li>
+  
+          </ul>
+        </div>
+  
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Adullah bin Waqar</h2>
+          <p>I am a front-end develper. this website is in bootstrap and javascript .currently learning and making
+            projects on Node js</p>
+          <ul class="list-unstyled ps-0">
+            <li>
+              <a class="icon-link mb-1" href="https://www.linkedin.com/in/abdullah-bin-waqar-bbab90275/">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle"></use>
+                </svg>
+                linkdin
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="/docs/5.3/getting-started/webpack/">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle"></use>
+                </svg>
+                Gmail
+              </a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="/docs/5.3/getting-started/parcel/">
+                <svg class="bi" width="16" height="16">
+                  <use xlink:href="#arrow-right-circle"></use>
+                </svg>
+                WattsaApp
+              </a>
+            </li>
+  
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--  -->
+  <!--  -->
+  <!-- footer  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <footer class="footer">
+    <div class="footer-section">
+      <ul>
+        <p class="p-tag">
+          Service
+        </p>
+        <a href="Coming.html">
+          <li href="main.html">Test</li>
+        </a>
+        <a href="Coming.html">
+          <li href="Coming.html">Tutor</li>
+        </a>
+        <a href="Coming.html">
+          <li href="Coming.html">Courses</li>
+        </a>
+
+      </ul>
+    </div>
+    <div class="footer-section">
+      <ul>
+
+        <a href="Coming.html">
+          <li href="main.html">Home</li>
+        </a>
+        <a href="Coming.html">
+          <li href="About.html">About</li>
+        </a>
+        <a href="Coming.html">
+          <li href="blog.html">Blog</li>
+        </a>
+        <a href="Coming.html">
+          <li href="contact.html">Contact Us</li>
+        </a>
+        <a href="Coming.html">
+          <li href="Coming.html">Source COde</li>
+        </a>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <p class="p-tag"> Contact </p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

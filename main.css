@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px; /* Set height to 60px */
+  background-color: #f5f5f5; 
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 15px; 
+}
+/* Logo area */
+.logo {
+  margin-left: 20px;
+  margin-right: 40px; /* Space between logo and the navigation */
+  margin-top: 5px;
+  border-radius: 50%;
+  object-fit: contain;
+  /* mix-blend-mode: color-burn; */
+  
+}
+
+.img-nav{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-top: 20px;
+  mix-blend-mode: darken;
+}
+body{
+  background-color: #f5f5f5;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  gap: 30px;    /*  Adjust the gap to equally space links*/
+  flex-grow: 1; /* Allows the links to take up all available space */
+}
+
+/* Style for individual links */
+.nav-links a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 60px; /* Align with the navbar height */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  color: #FFBD59;
+  /* padding: 0 5px; Slight padding for hover effect */
+}
+
+
+/*  */
+/*  slide image  */
+/*  */
+
+.imgbar{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.img1{
+
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.subject{
+  width: 50%; /* Or any width you want */
+    margin: 0 auto; 
+    margin-top: 30px;
+  /* border: 2px solid brown; */
+  width: 70%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+
+}
+
+.sub{
+  margin-top: 10px;
+  
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+.imgsub1{
+  width: 210px;
+  height: 210px;
+  object-fit: contain;
+  border-radius: 50%;
+
+}
+.sub2{
+  margin-top: 10px;
+  
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+.sub3{
+  margin-top: 10px;
+  
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+.sub4{
+  margin-top: 10px;
+  
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+
+.sub5{
+
+
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+
+.sub6{
+
+  
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+
+.sub7{
+
+  mix-blend-mode: darken;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+
+.sub8{
+
+  mix-blend-mode: darken;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+}
+
+/*  */
+/* foooter  */
+/*  */
+
+.footer {
+  background-color: #4c5270;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer-section ul li {
+  color: #ffffff;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.footer-section form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section input[type="email"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-section button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-section button:hover {
+  background-color: #ddd;
+}
+.p-tag{
+  color: #f5f5f5;
+  text-decoration: none;
+}

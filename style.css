@@ -1,0 +1,31 @@
+
+.subjects{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  .book{
+  height: 300px;
+  width: 300px;
+  }
+  
+  .slider{
+  height: 700px;
+  width: 100vh;
+  }
+  
+  .home{
+    margin-left: 20px;
+  }
+  .about{
+  
+    margin-left: 50px;
+  }
+  .blog{
+    margin-left: 1000px;
+  }
+  
+  .contact{
+  
+    margin-left: 180px;
+  }
